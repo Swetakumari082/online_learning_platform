@@ -1,0 +1,78 @@
+{% load static %}  
+  <!----footer-section------>
+    <section class="footer-section">
+        <div class="container">
+            <h2 class="mt-4 mb-4">Moduelarn!</h2>
+
+</div>
+    </section>
+   
+<section class="CATEGORIES pt-4">
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel-body">
+            <h3 class="hidden-xs">Categories</h3>
+            <ul class="trend_cat_list">
+            {% for i in allcat %}
+                <li>
+                    <a href="#">{{i.title}}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-12">
+        <div class="panel-body">
+            <h3 class="hidden-xs">Disclaimer</h3>
+            {% for i in disc_cat %}
+            <ul class="trend_cat_list disc">
+                <li>
+                    <a href="#">{{i.title}}</a>
+                </li>
+            </ul>
+            {% endfor %} 
+            {% for i in disc_blog %}
+            <ul class="trend_cat_list disc">    
+                <li>
+                    <a href="#">{{i.title}}</a>
+                </li>
+            </ul>    
+            {% endfor %}
+            {% for i in disc_post %}
+            <ul class="trend_cat_list disc">
+                <li>
+                    <a href="#">{{i.title}}</a>
+                </li>
+            </ul>    
+            {% endfor %}
+        </div>
+    </div>
+        <div class="tncblock">
+           
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+</div>
+</div>
+</section>
